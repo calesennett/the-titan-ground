@@ -9,11 +9,11 @@ $(document).ready(function() {
     e.preventDefault();
 
     if ($(this).hasClass('playing')) {
+      $(this).toggleClass('playing');
       sound.pause();
-      $(this).removeClass('playing');
     } else {
+      $(this).toggleClass('playing');
       sound.play();
-      $(this).addClass('playing');
     }
   });
 
