@@ -1,8 +1,7 @@
 $(document).ready(function() {
   var src   = $('img.audio').attr('data-audio-src').toString();
   var sound = new Howl({
-      urls: [src],
-      buffer: true
+      urls: [src]
   });
 
   $('.audio').click(function(e) {
