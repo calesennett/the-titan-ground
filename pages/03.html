@@ -16,8 +16,8 @@
     </div>
  
     <div class="mw5 mw7-ns tc ph5-ns center">
-      <div class="dim" plangular="http://soundcloud.com/jxnblk/plangular">
-        <img ng-click="playPause()" src="/images/03.jpg" class="w-100 h4" alt="The Titan Ground" />
+      <div class="dim">
+        <img src="/images/03.jpg" data-audio-src="/audio/Audio2.mp3" class="audio w-100 h4" alt="The Titan Ground" />
       </div>
       <div class="tl">
         <p>If at any moment, you are made uncomfortable, please feel free to exit the performance, or click the wave icon at the bottom of the page to listen to the sound of the ocean.</p>
@@ -37,6 +37,9 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="http://d2v52k3cl9vedd.cloudfront.net/plangular/3.0.1/plangular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/howler/1.1.29/howler.min.js"></script>
+    <script src="/js/app.js"></script>
     <script>
       var app = angular.module('TheTitanGround', ['plangular'])
         .config(function(plangularConfigProvider) {
