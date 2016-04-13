@@ -17,7 +17,7 @@
  
     <div class="mw5 mw7-ns tc ph5-ns center">
       <div class="dim" plangular="http://soundcloud.com/jxnblk/plangular">
-        <img ng-click="playPause()" src="/images/02.png" class="w-100 h4" alt="The Titan Ground" />
+        <img src="/images/02.png" data-audio-src="/audio/Audio2.mp3" class="audio w-100 h4" alt="The Titan Ground" />
       </div>
       <div class="tl">
         <p>To listen to an audio clip, click the picture above the text. As soon as the audio clip is over, click next at the bottom of your screen.</p>
@@ -33,6 +33,9 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="http://d2v52k3cl9vedd.cloudfront.net/plangular/3.0.1/plangular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/howler/1.1.29/howler.min.js"></script>
+    <script src="/js/app.js"></script>
     <script>
       var app = angular.module('TheTitanGround', ['plangular'])
         .config(function(plangularConfigProvider) {
